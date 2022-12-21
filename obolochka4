@@ -1,0 +1,10 @@
+package Practic3.Obolochka;
+
+import java.lang.*;
+
+public class obl4 {
+    public static void main(String [] args) {
+        java.lang.Double Double = new Double(1.1);
+        System.out.println(Double);
+    }
+}
