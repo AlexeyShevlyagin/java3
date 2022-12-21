@@ -1,0 +1,23 @@
+package Practic3;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Zadaniye3 {
+    public static void main(String[] args) {
+    int[] array = new int [4];
+    Random rand = new Random();
+    System.out.println("ваш масив: ");
+    for (int i =0; i< array.length;i++) {
+        array[i]=rand.nextInt(10,99);
+        System.out.print(array[i] + " ");
+    }
+    int k=0;
+    for (int i =1; i< array.length;i++) {
+        if (array[i-1]<=array[i]) k++;
+    }
+    if (k==4){
+        System.out.println("\n"+"Массив - строго возрастающая последовательность");
+    }
+    else System.out.println("\n"+"Массив не является строго возрастающей последовательностью");
+    }
+}
