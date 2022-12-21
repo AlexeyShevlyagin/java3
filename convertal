@@ -1,0 +1,41 @@
+package Practic3;
+
+import java.lang.*;
+import java.util.Scanner;
+public class convertval {
+    public static void main(String []args ){
+        double dollar,euro, rubles;
+        int choice;
+        double amount;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Выберите валюту:");
+        System.out.println("Введите 1 для выбора рубля");
+        System.out.println("Введите 2 для выбора доллара");
+        System.out.println("Введите 3 для выбора евро");
+        System.out.print("Введите свой выбор: ");
+        choice = sc.nextInt();
+        System.out.print("Введите сумму, которую хотите конвертировать: ");
+        amount = sc.nextFloat();
+        switch (choice) {
+            case 1: // rubles
+                dollar = amount / 61.4;
+                System.out.println("доллары " + dollar);
+                euro = amount / 60.9;
+                System.out.println("евро    " + euro);
+
+                break;
+            case 2: //dollars
+                rubles = amount * 61.4;
+                System.out.println("рубли " + rubles);
+                euro = amount * 0.99;
+                System.out.println("евро  " + euro);
+                break;
+            case 3: // euro
+                rubles = amount * 60.9;
+                System.out.println("рубли   " + rubles);
+                dollar = amount * 1.01;
+                System.out.println("доллары " + dollar);
+                break;
+        }
+    }
+}
