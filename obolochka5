@@ -1,0 +1,10 @@
+package Practic3.Obolochka;
+
+import java.lang.*;
+public class obl5 {
+    public static void main(String[]args){
+        double a = 45.3;
+        String d = Double.toString(a);
+        System.out.println(d);
+    }
+}
